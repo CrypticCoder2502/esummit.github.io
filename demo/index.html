@@ -3,7 +3,7 @@
 <head>
 	<title>E-SUMMIT</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	
+	<link rel="stylesheet" media="screen" href="index.css">
 	<link rel="stylesheet" media="screen" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Cinzel:900|Josefin+Sans|Courgette" rel="stylesheet">
 	<meta name="viewport" content="width=device-width , initial-scale=1.0">
@@ -22,6 +22,14 @@
   
 }
 
+   #logo {
+  position:absolute;
+  top: 5%;
+  left: 3%;
+  color: #fff;
+  z-index: 9999;
+  
+}
   #hello {
   position:absolute;
   top: 35%;
@@ -40,6 +48,7 @@
   word-spacing: 10px;
   
 }
+
 
 #bye {
   position:absolute;
@@ -127,28 +136,28 @@
 }
 
 .fa-facebook {
-  background: #3B5998;
+  background: #d11919;
   color: white;
   top: 30%;
   left: 2%;
 }
 
 .fa-twitter {
-  background: #55ACEE;
+  background: #d11919;
   color: white;
   top: 45%;
   left: 2%;
 }
 
 .fa-linkedin {
-  background: #007bb5;
+  background: #d11919;
   color: white;
   top: 60%;
   left: 2%;
 }
 
 .fa-instagram {
-  background: #125688;
+  background: #d11919;
   color: white;
   top: 75%;
   left: 2%;
@@ -157,6 +166,7 @@
 </style>
 </head>
 <body>
+
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
@@ -168,7 +178,7 @@
 </div>
 
 <div id="nav" class="fadeIn">
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">MENU &#9776; </span>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()"><font size="5">MENU</font> &#9776; </span>
 </div>	
 
 <script>
@@ -196,13 +206,15 @@ function closeNav() {
 <div id="date" class="bigEntrance"><br>
 <font size="9" style="font-family: 'ZCOOL KuaiLe', cursive;">9th and 10th Feb, 2019</font>
 </div>
-
-
+<div id="logo"`class="hatch">
+<img src="logo.png" height="100" width="220">
+</div>
+<div id="social" class="slideRight">
 <a href="#" class="fa fa-facebook"></a>
 <a href="#" class="fa fa-twitter"></a>
 <a href="#" class="fa fa-instagram"></a>
 <a href="#" class="fa fa-linkedin"></a>
-
+</div>
 
 <!-- particles.js container -->
 <div id="particles-js"></div>
