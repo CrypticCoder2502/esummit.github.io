@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
 	<title>E-SUMMIT</title>
+		
+	<link rel="icon" href="favicon.png">
+	
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="index.css">
 	<link rel="stylesheet" media="screen" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Signika" rel="stylesheet">
-	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+
 <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"> 
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style12.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/demo.css"> <!-- Demo style -->
+  	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Cabin" rel="stylesheet">
   <style>
+  body {
+  margin: 0;
+ 
+}
    #logo {
   position:absolute;
   top: 20%;
   left: 21%;
   color: #fff;
-  z-index: 9999;
+  z-index: 999;
   
 }
 
@@ -29,56 +50,64 @@
   z-index: 9999;
   
 }
-.overlay {
-  height: 600px;
-  width: 300px;
-  display: none;
-  position: fixed;
-  z-index: 10000;
-  margin-left: 1030px;
-  background-color: #343434;
-  
-}
 
-.overlay-content {
-  position: relative;
-  top: 15%;
-  width: 40%;
-  float: center;
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
   text-align: center;
-  margin-top: 30px;
 }
 
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #D23333;
+#navbar {
+  overflow: hidden;
+  background-color: #000;
+  z-index: 9999;
+}
+
+#navbar a {
+  float: left;
   display: block;
-  transition: 0.3s;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-.overlay a:hover, .overlay a:focus {
-  color: #fff;
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-  
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.topnav-right {
+  float: right;
 }
 
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
+.content {
+  padding: 16px;
 }
 
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
 
 * {
   box-sizing: border-box;
@@ -86,7 +115,7 @@
 
 .bg-image {
   /* The image used */
-  background-color: #343434;
+  background-color: #000;
   
   /* Add the blur effect */
   filter: blur(2px);
@@ -123,23 +152,32 @@
 #speakers1 {
 	background-image: url("talk.jpg");
 }
+p.big {
+  line-height: 1.8;
+}
 </style>
 </head>
 <body>
-<div id="main">
-		<div class="sticky">
-				<h5>Entrepreneurship Cell, HBTU </h5> 
-				<hr>
-				<a href="#agenda"><span id="navi">Agenda</span></a>
-				<a href="#speakers"><span style="color: #006A9C">Talks</span></a>
-				<a href="#events"><span>Events</span></a>
-				<a href="#workshop"><span style="color: #006A9C">Workshop</span></a>
-				<a href="#schedule"><span>Schedule</span></a>
-				<a href="#venue"><span style="color: #006A9C">Venue</span></a>
-				<a href="#partners"><span>Partners</span></a>
-				<a href="campus.html"><span style="color: #006A9C" id="status"></span></a>
+
+ <!-- Preloader -->
+   
+
+
+<div id="navbar">
+<div class="topnav-right">
+  <ahref="javascript:void(0)">Home</a>
+  <a href="#agenda">Agenda</span></a>
+				<a href="#speakers">Talks</a>
+				<a href="#events">Events</a>
+				<a href="#workshop">Workshop</a>
+				<a href="#schedule">Schedule</a>
+				<a href="#venue">Venue</a>
+				<a href="#partners">Partners</a>
+				<a href="campus.html">Campus Ambassdor</a>
 				<a href="#" onclick="logout()"><span id="logout"></span></a>
-		</div>
+</div>
+</div>
+
 
 		<div id="logo">
 			<img src="logo.png" height="400" width="780">
@@ -165,33 +203,66 @@
 		<script src="../particles.js"></script>
 		<script src="js/app.js"></script>
 </div>
+
 		<section id="agenda1">
+		
 			<div id="agenda">
 			<br>
+			<br><br>
 			<br>
 			
 	<div class="container">
-				<strong><h1>AGENDA</h1></strong>
-				<h3>Frugality In Innovation</h3>
-				<font size="4">#JUGAAD OR FRUGALITY IN INNOVATION Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </font>
+				<font size="8"" style="font-family: 'Abril Fatface', cursive;"><strong><h1> AGENDA </h1></strong></font><br>
+				
+				 
+				<font size="4" color="black" style="font-family: 'Cabin', sans-serif;" >A couple of days to enter into the new world of own geniuses! 
+				The annual two-day entrepreneurial fest conducted by<br><br><b><font color="#f00"> E-Cell, HBTU </font></b>unfolds finally on 9TH Feb onwards. 
+				Including workshops and talks inclined to incubate the prototypes<br><br> popping inside some dynamic minds, the fest also aims at arousing the sense of entrepreneurship amongst the students. 
+				<br><br>This fest tags the guys to blossom new ideas through interactive competitive sessions </font>
+				</p>
 				<br>
 				<br>
 				<br>
 				<br><br>
 				<br>
 				<br>
+				<br>
 					</div>
 					</div>
-		</section>	
+
+		</section>
+
+
+		
 			<section id="speakers1">
-	<div class="container">
+		<div class="cd-fixed-bg cd-fixed-bg--2">
+		
+		<div class="container">
 		<div id="speakers">
-				<strong><h1>TALKS AND SPEAKERS</h1></strong>
+		<br>
+		<br>
+		<br>
+		<br>
+				<font size="8"" style="font-family: 'Abril Fatface', cursive;"><strong><h1>TALKS AND SPEAKERS</h1></strong></font>
+				<br>
+				<br>
+				<div class="row">
+					<div class="col-md-4">
+						<img src="jitu.png">
+						<p>Jeetendra Kumar</p>
+					</div>
+					
+					<div class="col-md-4">
+						<img src="jitu.png">
+						<p>Jeetendra Kumar</p>
+					</div>
+					<div class="col-md-4">
+						<img src="jitu.png">
+						<p>Jeetendra Kumar</p>
+					</div>
+				</div>
+				<br>
+					<br>
 				<div class="row">
 					<div class="col-md-4">
 						<img src="jitu.png">
@@ -206,6 +277,8 @@
 						<p>Jeetendra Kumar</p>
 					</div>
 				</div>
+				<br>
+					<br>
 				<div class="row">
 					<div class="col-md-4">
 						<img src="jitu.png">
@@ -220,6 +293,8 @@
 						<p>Jeetendra Kumar</p>
 					</div>
 				</div>
+				<br>
+					<br>
 				<div class="row">
 					<div class="col-md-4">
 						<img src="jitu.png">
@@ -234,28 +309,19 @@
 						<p>Jeetendra Kumar</p>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<img src="jitu.png">
-						<p>Jeetendra Kumar</p>
-					</div>
-					<div class="col-md-4">
-						<img src="jitu.png">
-						<p>Jeetendra Kumar</p>
-					</div>
-					<div class="col-md-4">
-						<img src="jitu.png">
-						<p>Jeetendra Kumar</p>
-					</div>
-				</div>
+				<br>
+					<br><br>
+					<br>
+			</div>
 			</div>
 			</div>
 			</section>
 	
 	<div id="events">
-			<div class="container">
-		<strong><h1>EVENTS</h1></strong>
-				
+	<div class="cd-fixed-bg cd-fixed-bg--3">
+			<div class="container"><br><br><br><br>
+		<font size="8"" style="font-family: 'Abril Fatface', cursive;" color="red"><strong><h1>EVENTS</h1></strong></font>
+				<br><br>
 				<div class="row">
 					<div class="col-md-6">
 						<div class="card" style="width: 18rem;">
@@ -356,18 +422,14 @@
 				</div>
 				<br><br>
 				</div>
+				</div>
 				</section>
-	
-	<div class="container">
-			<div id="workshop">
-				<strong><h1>ENTREPRENEURSHIP WORKSHOP</h1></strong>
-				<img src="Grassroots.png">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				
+			<div id="workshop"><br><br><br><br>
+				<font size="8"" style="font-family: 'Abril Fatface', cursive;" color="red"><strong><h1>ENTREPRENEURSHIP WORKSHOP</h1></strong></font>
+				<br><br><img src="Grassroots.png">
+				<p>Baffled with your business plans or puzzled with your startups, here comes Grassroot Education, to strengthen your roots, in a coherent manner. Grassroot Education itself being a venture specially aims, at turning the sprouts into the healthy plants, guided by ISB alumnus.
+E-cell organizes "Entrepreneur Workshop" by "Grassroot Education", to nurture and solidify the experiences of young entre.</p>
 				<button type="button" class="btn btn-primary btn-lg btn-block" onclick="workshop_registration()">Register For Workshop</button>
 			</div>
 			<br><br>
@@ -383,7 +445,7 @@
 				<img src="partners.png">
 			</div>
 		</div>
-	</div>
+
 			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -404,7 +466,23 @@
   };
   firebase.initializeApp(config);
 </script>
-<script type="text/javascript" src="index.js"></script>			
+<script type="text/javascript" src="index.js"></script>	
+<script src="js/main.js"></script> 
+<script>
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 
 </div>
 </body>
