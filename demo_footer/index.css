@@ -1,0 +1,219 @@
+body{
+	background-color: #000;
+}
+#events{
+	background-color: white;
+}
+#workshop{
+	background-color: #343434;
+}
+#workshop h1{
+	color: white;
+}
+#speakers1 img{
+	width: 300px;
+	height: 200px;
+}
+#speakers1 h5{
+	color: #D23333;
+}
+#workshop p{
+	font-size: 20px;
+	font-family: 'Cabin', sans-serif;
+	line-height: 1.8;
+}
+#workshop img{
+	margin-left: 70px;
+}
+#extra img{
+	margin-left: 70px;
+	height: 700px;
+	width: 1000px;
+}
+footer{
+	background-color: rgb(245,245,245);
+	width: 1400px;
+	height: 150px;
+}
+footer #home{
+	margin-left: 80px;
+}
+footer img{
+	margin-top: 50px;
+	width: 50px;
+	height: 50px;
+}
+footer span{
+	padding: 20px;
+	color: black;
+	font-size: 15px;
+}
+button{
+	height: 40px;
+	border-radius: 5px;
+}
+#extra{
+	background-color: white;
+}
+#workshop img{
+	width: 1000px;
+	height: 700px;
+}
+.sticky h5{
+	font-family: 'Roboto Mono', monospace;
+	margin-left: 500px;
+	color: #fff;
+}
+hr{
+	width: 500px;
+	text-align: center;
+	margin: 0 auto;
+	color: white;
+}
+span{
+	font-family: 'Roboto Mono', monospace;
+	color: white;
+	font-size: 20px;
+	padding-left: 15px;
+}
+#navi{
+	margin-left: 180px;
+}
+.co{
+	background-color: #fff;
+}
+.co h5{
+	color: #006A9C;
+}
+.co span{
+	color: #006A9C;
+}
+.container{
+	width: 1000px;
+	height: 100%;
+}
+h1{
+	font-family: 'Roboto Mono', monospace;
+	color: #D23333;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+h3{
+	font-family: 'Josefin Sans', sans-serif;
+	color: #006A9C;
+}
+p{
+	font-family: 'Signika', sans-serif;
+	color:#FFFFFF;
+}
+img{
+	border-radius: 5px;
+	padding: 10px;
+}
+a{
+	text-decoration: none;
+}
+@media screen and (max-width: 999px){
+	.container{
+		width: 100%;
+	}
+	img{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 640px){
+	.container{
+		width: 100%;
+	}
+	.container img{
+		width: 100%;
+	}
+	#logo{
+		width: 60%;
+		height: 200px;
+		margin-top: -60px;
+		left: 10%;
+	}
+	#social{
+		margin-top: -100px;
+	}
+	#agenda{
+		width: 100%;
+		background-color: white;
+	}
+	#speakers{
+		width: 100%;
+	}
+	#events .row .col-md-4{
+		width: 100%;
+	}
+	#workshop{
+		width: 100%;
+	}
+	#workshop img{
+		width: 100%;
+		margin-left: -20px;
+	}
+	#schedule img{
+		width: 100%;
+		height: 50%;
+		margin-left: -15px;
+	}
+	footer{
+		width: 	100%;
+	}
+	footer img{
+		width: 20px;
+		height: 20px;
+	}
+	
+}
+
+@media screen and (max-width: 320px){
+	.container{
+		width: 100%;
+	}
+	.container img{
+		width: 100%;
+	}
+	#logo{
+		width: 60%;
+		height: 200px;
+		margin-top: -60px;
+		left: 10%;
+	}
+	#social{
+		margin-top: -100px;
+	}
+	#agenda{
+		width: 100%;
+		background-color: white;
+	}
+	#speakers{
+		width: 100%;
+	}
+	#events .row .col-md-4{
+		width: 100%;
+	}
+	#workshop{
+		width: 100%;
+	}
+	#workshop img{
+		width: 100%;
+		margin-left: -20px;
+	}
+	#schedule img{
+		width: 100%;
+		height: 50%;
+		margin-left: -15px;
+	}
+	footer{
+		width: 	100%;
+	}
+	footer img{
+		width: 20px;
+		height: 20px;
+	}
+	
+}

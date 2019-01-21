@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<title>E-SUMMIT</title>
+		
+	<link rel="icon" href="favicon.png">
+	
+	<link rel="stylesheet" href="index.css">
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	<link rel="stylesheet" media="screen" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Signika" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style12.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/demo.css"> <!-- Demo style -->
+  	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Cabin" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset1.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style1.css"> <!-- Resource style -->
+	<link href="https://fonts.googleapis.com/css?family=Arvo|Rokkitt" rel="stylesheet">
+  <style>
+  body {
+  margin: 0;
+ 
+}
+   #logo {
+  position:absolute;
+  top: 20%;
+  left: 21%;
+  color: #fff;
+  z-index: 999;
+  
+}
+
+  #social {
+  position:absolute;
+  top: 37%;
+  right: 7%;
+  color: #fff;
+  z-index: 9999;
+  
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #343434;
+  z-index: 9999;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.topnav-right {
+  float: right;
+}
+
+.content {
+  padding: 16px;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-color: #343434;
+  
+  /* Add the blur effect */
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+#agenda1 {
+  background-color: white;
+}
+#speakers1 {
+	background-color: #343434;
+}
+#speakers1 h1{
+	color: white;
+}
+p.big {
+  line-height: 1.8;
+}
+</style>
+</head>
+<body>
+
+ <!-- Preloader -->
+   
+
+
+<div id="navbar">
+<div class="topnav-right">
+  <ahref="javascript:void(0)">Home</a>
+  <a href="#agenda1">Agenda</span></a>
+				<a href="#speakers1">Talks</a>
+				<a href="#events">Events</a>
+				<a href="#workshop">Workshop</a>
+				<a href="#schedule">Schedule</a>
+				<a href="campus.html"><span id="status"></span></a>
+				<a href="#" onclick="logout()"><span id="logout"></span></a>
+</div>
+</div>
+
+
+		<div id="logo">
+			<img src="logo.png" height="400" width="780">
+		</div>
+		
+	<div id="social">	
+<a href="https://www.facebook.com/ecell.hbtuk/" > <img src="facebook-Icon.png"></a>
+<br>
+<br>
+<a href="https://www.instagram.com/ecellhbtu/" > <img src="Instagram-Icon.png"></a>
+<br>
+<br>
+<a href="https://www.instagram.com/ecellhbtu/" > <img src="Linkedin.png"></a>
+</div>
+		<div class="bg-image">
+		<!-- particles.js container -->
+		<div id="particles-js"></div>
+
+		<!-- scripts -->
+		<script src="js/particles.js"></script>
+		<script src="js/app.js"></script>
+</div>
+
+		<section id="agenda1">
+		
+			<br>
+			<br><br>
+			<br>
+			
+	<div class="container">
+				<font size="8" color="#D23333" style="font-family: 'Abril Fatface', cursive;"><strong><h1> AGENDA </h1></strong></font><br>
+				
+				 
+				<font size="4" color="black" style="font-family: 'Cabin', sans-serif;" >A couple of days to enter into the new world of own geniuses! 
+				The annual two-day entrepreneurial fest conducted by<br><br><b><font color="#D23333"> E-Cell, HBTU </font></b>unfolds finally on 9TH Feb onwards. 
+				Including workshops and talks inclined to incubate the prototypes<br><br> popping inside some dynamic minds, the fest also aims at arousing the sense of entrepreneurship amongst the students. 
+				<br><br>This fest tags the guys to blossom new ideas through interactive competitive sessions </font>
+				</p>
+				<br>
+				<br>
+				<br>
+				<br><br>
+				<br>
+				<br>
+				<br>
+					</div>
+
+		</section>
+
+
+		
+			<section id="speakers1">
+				<div class="container">
+		<br>
+		<br>
+		<br>
+		<br>
+				<font size="8"" style="font-family: 'Abril Fatface', cursive;"><strong><h1>TALKS AND SPEAKERS</h1></strong></font>
+				<br>
+				<br>
+				<div class="row">
+					<div class="col-md-4">
+						<img src="jitu.png">
+						<p>Jeetendra Kumar</p>
+						<h5>TVF FAME</h5>
+					</div>
+					
+					<div class="col-md-4">
+						<img src="abish.jpg">
+						<p>Abish Mathew</p>
+						<h5>You Know Him</h5>
+					</div>
+					<div class="col-md-4">
+						<img src="prabhu.jpg">
+						<p>Jaideep Prabhu</p>
+						<h5>Writer, Jugaad Innovation</h5>
+					</div>
+				</div>
+				<br>
+					<br>
+					<div class="row">
+					<div class="col-md-4">
+						<img src="rakesh.jpeg">
+						<p>Rakesh Sidana</p>
+						<h5>Founder, MeriCar.com</h5>
+					</div>
+					<div class="col-md-4">
+						<img src="suchita.jpg">
+						<p>Suchita Salwan</p>
+						<h5>Founder & CEO, Little Black Book</h5>
+					</div>
+					<div class="col-md-4">
+						<img src="majety.jpg">
+						<p>Shriharsha Majety</p>
+						<h5>Founder, SWIGGY</h5>
+					</div>
+				</div>
+				<br>
+					<br>
+				<div class="row">
+					<div class="col-md-4">
+						<img src="sarkar.jpg">
+						<p>Bishal Sarkar </p>
+						<h5>King of confidence</h5>
+					</div>
+					<div class="col-md-4">
+						<img src="deep.jpg">
+						<p>Deep Kalra</p>
+						<h5>Founder, MMT</h5>
+					</div>
+					<div class="col-md-4">
+						<img src="varun.jpg">
+						<p>Varun Agarwal</p>
+						<h5>Filmmaker and Entrepreneur</h5>
+					</div>
+				</div>
+				<br>
+					<br>
+				<div class="row">
+					<div class="col-md-4">
+						<img src="beer.jpg">
+						<p>Ranveer Allahabadia</p>
+						<h5>Beer Biceps, YouTube</h5>
+					</div>
+					<div class="col-md-4">
+						<img src="akansha.jpg">
+						<p>Akansha Sharma</p>
+						<h5>iOS Developer</h5>
+					</div>
+					<div class="col-md-4">
+						<img src="karsanbhai.jpg">
+						<p>Karsanbhai Patel</p>
+						<h5>Founder, NIRMA</h5>
+					</div>
+				</div>
+				<br>
+					<br>
+				<br>
+					<br>
+				</div>
+			
+			</section>
+	
+	<section class="glitch-transition">
+	<main class="cd-main-content">
+	<div id="events">
+			<div class="container"><br><br><br><br>
+		<strong><h1><font size="8"" style="font-family: 'Arvo', serif;" color="#D23333">EVENTS</font></h1></strong></font>
+				<br><br>
+				
+				
+				
+				
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card" style="width: 18rem;">
+						  <img src="imgeve/hackathon.jpg" class="card-img-top" alt="event.png">
+						  <div class="card-body">
+						    <h4 class="card-title"><font size="6" align="center" color="#f00" style="font-family: 'Arvo', serif;"> HACKATHON </font></h4>
+						    <!--<p class="card-text"><font color="#000">Some quick example text to build on the card title and make up the bulk of the card's content.</font></p>
+						  --> 
+						  <br><a href="#modal-1" class="cd-btn cd-modal-trigger">Know More</a>
+								
+						   <button class="btn btn-primary" onclick = "event1_registration()">Register</button>
+						  </div>
+						</div>
+					</div>
+					<br><br>
+					
+					
+					
+					<div class="col-md-6">
+						<div class="card" style="width: 18rem;">
+						  <img src="imgeve/biz.jpeg" class="card-img-top" alt="event.png">
+						  <div class="card-body">
+						    <h4 class="card-title"><h4 class="card-title"><font size="6" align="center" color="#f00" style="font-family: 'Arvo', serif;">BIZ QUIZ</font></h4>
+						     <!--  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    --> 
+							 <br><a href="#modal-2" class="cd-btn cd-modal-trigger">Know More</a>
+							 
+							<button  class="btn btn-primary" onclick = "event2_registration()">Register</button>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<br><br>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card" style="width: 18rem;">
+						  <img src="imgeve/ADMAD.jpg" class="card-img-top" alt="event.png">
+						  <div class="card-body">
+						    <h4 class="card-title"><font size="6" align="center" color="#f00" style="font-family: 'Arvo', serif;">AD MAD</FONT></h4>
+						    <!--  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    --> 
+							 <br><a href="#modal-3" class="cd-btn cd-modal-trigger">Know More</a>
+							 
+							<button class="btn btn-primary" onclick = "event3_registration()">Register</button>
+						  </div>
+						</div>
+					</div>
+					<br><br>
+					
+					<div class="col-md-6">
+						<div class="card" style="width: 18rem;">
+						  <img src="imgeve/got.png" class="card-img-top" alt="event.png">
+						  <div class="card-body">
+						    <h4 class="card-title"><B><font size="5" align="center" color="#f00" style="font-family: 'Arvo', serif;">GAME OF THRONES</FONT></h4>
+					</b>  <!--  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    --> 
+							
+							 <br><a href="#modal-4" class="cd-btn cd-modal-trigger">Know More</a>
+							 
+							 
+							<button class="btn btn-primary" onclick = "event4_registration()">Register</button>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<br><br>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card" style="width: 18rem;">
+						  <img src="imgeve/EXPRESS.jpg" class="card-img-top" alt="event.png">
+						  <div class="card-body">
+						    <h4 class="card-title"><font size="6" align="center" color="#f00" style="font-family: 'Arvo', serif;">BARTER OFF</FONT></h4>
+						   <!--  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    --> 
+							
+							 <br><a href="#modal-5" class="cd-btn cd-modal-trigger">Know More</a>
+							 
+							<button class="btn btn-primary" onclick = "event5_registration()">Register</button>
+						  </div>
+						</div>
+					</div>
+					<br><br>
+					
+					<div class="col-md-6">
+						<div class="card" style="width: 18rem;">
+						  <img src="imgeve/PM.png" class="card-img-top" alt="event.png">
+						  <div class="card-body">
+						    <h4 class="card-title"><font size="6" align="center" color="#f00" style="font-family: 'Arvo', serif;">POLITICKS</FONT></h4>
+					        <!--  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    --> 
+							
+							 <br><a href="#modal-6" class="cd-btn cd-modal-trigger">Know More</a>
+							 
+							<button class="btn btn-primary" onclick = "event6_registration()">Register</button>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<br><br>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card" style="width: 18rem;">
+						  <img src="imgeve/pitch.jpg" class="card-img-top" alt="event.png">
+						  <div class="card-body">
+						    <h4 class="card-title"><font size="5" align="center" color="#f00" style="font-family: 'Arvo', serif;">PITCH PLEASE!</FONT></h4>
+						       <!--  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    -->  
+							
+							 <br><a href="#modal-7" class="cd-btn cd-modal-trigger">Know More</a>
+							 
+							 <button class="btn btn-primary" onclick = "event7_registration()">Register</button>
+						  </div>
+						</div>
+					</div>
+					<br><br>
+					
+					<div class="col-md-6">
+						<div class="card" style="width: 18rem;">
+						  <img src="imgeve/binder.jpg" class="card-img-top" alt="event.png">
+						  <div class="card-body">
+						    <h4 class="card-title"><font size="6" align="center" color="#f00" style="font-family: 'Arvo', serif;">BINDER</FONT></h4>
+						     <!--  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    -->
+
+							 <br><a href="#modal-8" class="cd-btn cd-modal-trigger">Know More</a>
+							 
+							 <button class="btn btn-primary" onclick = "event8_registration()">Register</button>
+						  </div>
+						</div>
+					</div>
+				
+				<br><br>
+				</div>
+				</div>
+				</main>
+				<div class="cd-modal" id="modal-1">
+	<div class="modal-content">
+		<h2><font color="#D23333">HACKATHON</h2>
+		
+		<p>
+		Details will be uploaded soon ...... STAY TUNED and Keep Hustling!!</p>
+	</div> <!-- .modal-content -->
+	 <!-- .modal-content -->
+
+	<a href="#0" class="modal-close">Close</a>
+</div> <!-- .cd-modal -->
+
+<div class="cd-transition-layer" data-frame="25"> 
+	<div class="bg-layer"></div>
+</div> <!-- .cd-transition-layer -->
+
+
+
+<div class="cd-modal" id="modal-2">
+	<div class="modal-content">
+		<h2><font color="#D23333">BIZ</font> <font color="#e2f0ed"> QUIZ</font></h2>
+		<p>
+		Round 1-<br>
+•	Will be on central auditorium on 9th February. <br>
+•	Contestants will be participating in a group of two.<br>
+•	Questions will be given in a page for which they have to write their answer.<br>
+•	30 mins time will be given to them only.
+
+</p>
+<p>
+Round 2-<br>
+•	Only 5 team will be qualified for the round 2 which will be on Incubation Hub on 10th.<br>
+•	Proper chair table arrangement will be there and only 15 question will be asked. And proper grading scheme will be there.<br>
+•	One having maximum marks will be the winner.
+</p>
+<p><b>
+CERTIFICATE will be given to the winning team of 2 people only.<br>
+Candidates are requested to be on time.
+</b></p>
+	</div> <!-- .modal-content -->
+	 <!-- .modal-content -->
+
+	<a href="#0" class="modal-close">Close</a>
+</div> <!-- .cd-modal -->
+
+<div class="cd-transition-layer" data-frame="25"> 
+	<div class="bg-layer"></div>
+</div> <!-- .cd-transition-layer -->
+
+				<div class="cd-modal" id="modal-3">
+	<div class="modal-content">
+		<h2><font color="#D23333">AD</font><font color="#e2f0ed"> MAD</font></h2>
+		
+		<p>
+			* Registration will be online in number in numbers of min 2 and max 5 through Google form in which list of 3 advertisement product will be provided.<BR>
+			
+* Participants can choose only one product, after filling his and her team details.<BR>
+ 
+* We will upload  Poster and google form on 30th January on our insta , facebook  handles.<BR>
+ 
+* We will give participants only two days to submit their  videos . And will not accept videos after 2nd February .<BR>
+
+* All videos will be uploaded on 3rd February on our facebook page. And duration of each video should be in 30 or 45 or 60 sec only. <BR>
+
+* The best advertisement on the basis of Facebook likes and opinion from team will be winning the competition.<BR>
+
+* The participants will have to come up with innovative, clever and catchy ideas. <BR>
+
+* Participants can either make an animated ad or record a video involving their team members only.<BR>
+
+
+* Prize :  10000 ( 1st - 5000, 2nd - 3000 , 3rd - 2000) <BR>
+</p>
+	</div> <!-- .modal-content -->
+	 <!-- .modal-content -->
+
+	<a href="#0" class="modal-close">Close</a>
+</div> <!-- .cd-modal -->
+
+<div class="cd-transition-layer" data-frame="25"> 
+	<div class="bg-layer"></div>
+</div> <!-- .cd-transition-layer -->
+
+<a href="#0" class="modal-close">Close</a>
+</div> <!-- .cd-modal -->
+
+<div class="cd-transition-layer" data-frame="25"> 
+	<div class="bg-layer"></div>
+</div> <!-- .cd-transition-layer -->
+
+
+
+<div class="cd-modal" id="modal-4">
+	<div class="modal-content">
+		<h2><font color="#D23333">GAME</font> OF <font color="#e2f0ed">THRONES</font></h2>
+		<p>
+		Details will be uploaded soon ...... STAY TUNED and Keep Hustling </p>
+	</div> <!-- .modal-content -->
+	 <!-- .modal-content -->
+
+	<a href="#0" class="modal-close">Close</a>
+</div> <!-- .cd-modal -->
+
+<div class="cd-transition-layer" data-frame="25"> 
+	<div class="bg-layer"></div>
+</div> <!-- .cd-transition-layer -->
+
+				
+
+<div class="cd-modal" id="modal-5">
+	<div class="modal-content">
+		<h2><font color="#e25822">BARTER</font>  <font color="#e2f0ed">OFF</font></h2>
+		<p>
+		Rules-
+1.	Contestants can form a team of max two or can participate individually.<br>
+2.	On 7th of February, we will be messaging them their product for which they have to the sales pitching.<br>
+3.	It will be on Incubation Hub.<br>
+4.	Proper pitching will be there infront of the judges and the contestants will be given 5 mins to pitch how well they can sell their product or scheme.<br>
+5.	The Result will be announced on 10th.<br>
+
+•	Participant are requested to be on time and should be clear on what they are saying infront of the judge<br>
+ </p>
+	</div> <!-- .modal-content -->
+	 <!-- .modal-content -->
+
+	<a href="#0" class="modal-close">Close</a>
+</div> <!-- .cd-modal -->
+
+<div class="cd-transition-layer" data-frame="25"> 
+	<div class="bg-layer"></div>
+</div> <!-- .cd-transition-layer -->
+
+
+<div class="cd-modal" id="modal-6">
+	<div class="modal-content">
+		<h2><font color="#D23333">POLITICKS</font></h2>
+		<p>
+Exhausted by the #NaMo & #RaGa tune playing all around for PM, Bring out your creativity and campaigning skill to promote your favorite PM. Jump into the politics world and explore the hidden potential of leadership and analysis within you. 
+<br><br>•	All the registration will be on our website only. Till 31st Jan.<br>
+•	Candidate can be alone or can participate in a group of 3.<br>
+•	He can himself explain as why he can be the Prime Minister. Or can choose one of the Leader and state why he should be PM.<br>
+•	He should be giving all the information about how he will promote his campaigning.<br>
+•	Judgement will be done on their way of thinking and speaking skills and their ideas.<br>
+•	And the result will be announced on the prize distribution ceremony.<br>
+•	They can present their ideas through presentation, posters, or any other stuff they like.<br> 
+•	It will judge their marketing skills as well. <br>
+ </p>
+	</div> <!-- .modal-content -->
+	 <!-- .modal-content -->
+
+	<a href="#0" class="modal-close">Close</a>
+</div> <!-- .cd-modal -->
+
+<div class="cd-transition-layer" data-frame="25"> 
+	<div class="bg-layer"></div>
+</div> <!-- .cd-transition-layer -->
+				
+
+<div class="cd-modal" id="modal-7">
+	<div class="modal-content">
+		<h2><font color="#D23333">PITCH</font>  <font color="#e2f0ed">PLEASE</font></h2>
+		<p>
+		* Registration will be online on our website. <br>
+* Atmost 4 team members allowed.<br>
+
+* Participants have to send us the problem on which they will be providing the solution on the Google form itself however their ideas will *not* be publically disclose. (Google form links will be shared soon.)
+
+<br>* Our authorized committee will select the 30 best ideas and the selected participants get a chance of pitching on 9th and 10th Feb in front of our jury board (consisting of venture capitalists, angel investors and mentors ).
+
+<br>*All the judgement in second round will be done by our jury board and they will guide and support you for your future business.
+
+<br>* Based on the final results top 3 ideas can have cash prizes as follows-<br>
+1st - Rs 30,000<br>
+2nd- Rs 15,000<br>
+3rd-  Rs 5,000
+ </p>
+	</div> <!-- .modal-content -->
+	 <!-- .modal-content -->
+
+	
+</div> <!-- .cd-modal -->
+
+<div class="cd-transition-layer" data-frame="25"> 
+	<div class="bg-layer"></div>
+</div> <!-- .cd-transition-layer -->
+
+
+<div class="cd-modal" id="modal-8">
+	<div class="modal-content">
+		<h2><font color="#D23333">BINDER</font></h2>
+		<p>
+		Details will be uploaded soon ...... STAY TUNED and Keep Hustling </p>
+	</div> <!-- .modal-content -->
+	 <!-- .modal-content -->
+
+	
+</div> <!-- .cd-modal -->
+
+<div class="cd-transition-layer" data-frame="25"> 
+	<div class="bg-layer"></div>
+</div> <!-- .cd-transition-layer -->
+
+			
+				
+			<div id="workshop"><br><br><br><br>
+				<div class="container">
+				<strong><h1><font size="8"" style="font-family: 'Arvo', serif;" color="white">ENTREPRENEURSHIP WORKSHOP</font></h1></strong>
+				<br><br><img src="workshop.jpg"> <br><br><br><br>
+				<p>Baffled with your business plans or puzzled with your startups, here comes Grassroot Education, to strengthen your roots, in a coherent manner.<font color="#D23333"> Grassroot Education </font> itself being a venture specially aims, at turning the sprouts into the healthy plants, guided by ISB alumnus.
+E-cell organizes "Entrepreneur Workshop" by "Grassroot Education", to nurture and solidify the experiences of young Entrepreneurs. Hurry Up because only 50 students will be selected for the workshop which will be done by<font color="#D23333"> FIFO !!</font></p><br><br><br><br>
+				<button type="submit" class="btn btn-primary" onclick="workshop_registration()">Register For Workshop</button>
+				<br><br>
+			</div>
+			</div>
+			<br><br>
+			<section id="extra">
+			<div id="schedule">
+				<div class="container">
+				<img src="schedule.jpg">
+				<br><br>
+				<img src="schedule1.jpg">
+			</div>
+			</div>
+			
+		</section>
+
+			<footer>
+				<div class="container">
+					<a href="#"><span id="home">Home</span></a><a href="#agenda1"><span href="#agenda1">Agenda</span></a>
+					<a href="#speakers1"><span>Speakers</span><a href="#events"><span>Events</span></a><span>
+					<img src="logo fe.png"></span><a href="#workshop"><span>Workshop</span></a>
+					<span>@E-Cell HBTU</span><span>ecell@hbtu.ac.in</span>
+				
+				</div>
+			</footer>
+
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+			
+
+
+<script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBWNL1t_OE7HTDUq89SVVinalMInLS0E98",
+    authDomain: "esummit-bc6c3.firebaseapp.com",
+    databaseURL: "https://esummit-bc6c3.firebaseio.com",
+    projectId: "esummit-bc6c3",
+    storageBucket: "esummit-bc6c3.appspot.com",
+    messagingSenderId: "750068514396"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript" src="index.js"></script>	
+<script src="js/main.js"></script> 
+<script>
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+<script src="js/modernizr.js"></script> <!-- Modernizr -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script>
+	if( !window.jQuery ) document.write('<script src="js/jquery-2.2.1-min.js"><\/script>');
+</script>
+<script src="js/main1.js"></script> <!-- Resource jQuery -->
+				</section>
+</div>
+</body>
+</html>
